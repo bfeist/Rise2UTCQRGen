@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UTCGen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yy-f4-Sbi" userLabel="stopBtn">
+                                <rect key="frame" x="70" y="790" width="274" height="45"/>
+                                <color key="backgroundColor" red="0.21917357970000001" green="0.28078587150000001" blue="0.6132019353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrX-L5-Hl6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZx-vu-Kba" userLabel="generateBtn">
+                                <rect key="frame" x="70" y="790" width="274" height="45"/>
+                                <color key="backgroundColor" red="0.21917357972501741" green="0.28078587145701478" blue="0.61320193527918776" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Yu9-N5-JGN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbR-CG-Aj7"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RISE2_sticker_logo400h" translatesAutoresizingMaskIntoConstraints="NO" id="HC5-hg-wlG">
+                                <rect key="frame" x="0.0" y="33" width="412" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="GpS-vG-gSZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSERVI_badgelogo" translatesAutoresizingMaskIntoConstraints="NO" id="kRN-Hx-yOd">
+                                <rect key="frame" x="13" y="177" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="m10-hw-ild"/>
+                                </constraints>
+                            </imageView>
+                            <textView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="00:00:00.00 Z" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0Z-wQ-WcU">
+                                <rect key="frame" x="13" y="668" width="385" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="3hE-Kk-5o0"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="ecI-yi-aen"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="46"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUA-OT-VDd">
+                                <rect key="frame" x="0.0" y="277" width="414" height="384"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="400px-NASA_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8TF-mu-G8o">
+                                <rect key="frame" x="294" y="180" width="110" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="bcj-SM-PXx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AUA-OT-VDd" firstAttribute="trailing" secondItem="p0Z-wQ-WcU" secondAttribute="trailing" id="2OK-5R-Sui"/>
+                            <constraint firstItem="AUA-OT-VDd" firstAttribute="top" secondItem="HC5-hg-wlG" secondAttribute="bottom" constant="8" id="3E4-2j-uQu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HC5-hg-wlG" secondAttribute="trailing" constant="2" id="6cp-ZC-3vt"/>
+                            <constraint firstItem="RZx-vu-Kba" firstAttribute="baseline" secondItem="1Yy-f4-Sbi" secondAttribute="baseline" id="7qo-Gf-bIF"/>
+                            <constraint firstItem="HC5-hg-wlG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-11" id="86m-h7-Ny9"/>
+                            <constraint firstItem="kRN-Hx-yOd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="AFZ-IT-9E3"/>
+                            <constraint firstItem="RZx-vu-Kba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Cgq-j5-CA0"/>
+                            <constraint firstItem="8TF-mu-G8o" firstAttribute="trailing" secondItem="AUA-OT-VDd" secondAttribute="trailing" id="DZi-3E-kPG"/>
+                            <constraint firstItem="HC5-hg-wlG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dpf-wZ-uXN"/>
+                            <constraint firstItem="kRN-Hx-yOd" firstAttribute="centerY" secondItem="8TF-mu-G8o" secondAttribute="centerY" id="I0h-YH-gRK"/>
+                            <constraint firstItem="p0Z-wQ-WcU" firstAttribute="top" secondItem="AUA-OT-VDd" secondAttribute="bottom" constant="7" id="JyX-vM-w86"/>
+                            <constraint firstItem="p0Z-wQ-WcU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Nxs-ih-lpc"/>
+                            <constraint firstItem="AUA-OT-VDd" firstAttribute="centerX" secondItem="p0Z-wQ-WcU" secondAttribute="centerX" id="QCh-H8-Bjl"/>
+                            <constraint firstItem="AUA-OT-VDd" firstAttribute="top" secondItem="kRN-Hx-yOd" secondAttribute="bottom" id="SYt-ar-YZk"/>
+                            <constraint firstItem="RZx-vu-Kba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T7X-yu-f8M"/>
+                            <constraint firstItem="RZx-vu-Kba" firstAttribute="top" secondItem="1Yy-f4-Sbi" secondAttribute="top" id="Tq0-Tm-hDw"/>
+                            <constraint firstItem="1Yy-f4-Sbi" firstAttribute="top" secondItem="p0Z-wQ-WcU" secondAttribute="bottom" constant="8" id="YaW-gt-liH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RZx-vu-Kba" secondAttribute="bottom" constant="27" id="ZJv-bs-0Dr"/>
+                            <constraint firstItem="kRN-Hx-yOd" firstAttribute="leading" secondItem="AUA-OT-VDd" secondAttribute="leading" id="elV-JW-6xj"/>
+                            <constraint firstItem="RZx-vu-Kba" firstAttribute="trailing" secondItem="1Yy-f4-Sbi" secondAttribute="trailing" id="ggL-rF-oEi"/>
+                            <constraint firstItem="1Yy-f4-Sbi" firstAttribute="firstBaseline" secondItem="RZx-vu-Kba" secondAttribute="firstBaseline" id="iJv-2m-G8Z"/>
+                            <constraint firstItem="HC5-hg-wlG" firstAttribute="centerX" secondItem="AUA-OT-VDd" secondAttribute="centerX" id="l6f-dM-TAa"/>
+                            <constraint firstItem="1Yy-f4-Sbi" firstAttribute="leading" secondItem="RZx-vu-Kba" secondAttribute="leading" id="yY6-W8-0yO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="generateBtn" destination="RZx-vu-Kba" id="fDG-4E-mhu"/>
+                        <outlet property="imageView" destination="AUA-OT-VDd" id="GFz-Cs-4tD"/>
+                        <outlet property="stopBtn" destination="1Yy-f4-Sbi" id="BZd-yA-OS1"/>
+                        <outlet property="txtFld" destination="p0Z-wQ-WcU" id="Oqx-kj-XOW"/>
+                        <outletCollection property="stopBtn" destination="1Yy-f4-Sbi" collectionClass="NSMutableArray" id="Sne-9R-kt5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="400px-NASA_logo" width="400" height="335"/>
+        <image name="RISE2_sticker_logo400h" width="487" height="400"/>
+        <image name="SSERVI_badgelogo" width="400" height="390"/>
+    </resources>
+</document>
